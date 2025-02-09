@@ -58,10 +58,10 @@ function showReadme() {
 }
 function replaceBreadcrumbs() {
     // Remove the default nginx indexing
-    var h1 = document.querySelector("h1");
-    if (h1 && h1.textContent.trim() === window.location.pathname) {
-        h1.remove();
-    }
+    document.querySelectorAll("#breadcrumb")[0]?.nextSibling?.nodeType ===
+        Node.TEXT_NODE &&
+        (document.querySelectorAll("#breadcrumb")[0].nextSibling.textContent =
+            "");
 
     // Get the breadcrumb container
     const breadcrumbContainer = document.getElementById("breadcrumb");

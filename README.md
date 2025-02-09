@@ -1,12 +1,8 @@
-# nginx-fancyindex-theme
+# superfancyindex
 
 Simple theme for nginx fancyindex module.
 
-This theme will (with javascript) tidy up and make the directory listed produced by https://github.com/aperezdc/ngx-fancyindex look nicer.
-
-If there is a file called README or README.txt it will be displayed below the directory index as preformatted text.
-
-README.md also works and will be processed as markdown before being displayed.
+This is forked from https://github.com/ShaneMcC/nginx-fancyindex-theme
 
 ## Usage
 
@@ -35,10 +31,6 @@ If you want to enable a god-awful bit of functionality, you can edit `theme/scri
 ## Demo
 
 A slightly-customised version of this is in use at https://mirrors.melbourne.co.uk/
-
-## Screenshots
-
-_Coming Soon_
 
 ## Acknowledgements
 

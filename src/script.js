@@ -52,6 +52,11 @@ var iconMap = {
     yaml: "bi bi-filetype-yml",
     yml: "bi bi-filetype-yml",
 
+    sh: "bi bi-filetype-sh",
+    zsh: "bi bi-filetype-sh",
+    fish: "bi bi-filetype-sh",
+    bash: "bi bi-filetype-sh",
+
     exe: "bi bi-file-binary",
     dll: "bi bi-file-binary",
     bin: "bi bi-file-binary",

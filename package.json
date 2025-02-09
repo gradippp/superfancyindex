@@ -11,6 +11,7 @@
     "author": "Agradip335 (https://agradip.fyi)",
     "license": "WTFPL",
     "devDependencies": {
+        "cross-env": "^7.0.3",
         "express": "^4.21.2",
         "nodemon": "^3.1.9"
     },

@@ -2,11 +2,11 @@
 
 Simple theme for nginx fancyindex module.
 
-This is forked from https://github.com/ShaneMcC/nginx-fancyindex-theme
-
 ## Usage
 
-Create a directory /.index/ within your webroot, and copy the `theme` directory from this repo into it.
+-   Clone this repository, then copy `build.json.example` into `build.json`, and then edit that however you want.
+-   Run `npm run build`; This will create the necessary files for your theme at the directory `dist`.
+-   Create a directory /.index/ within your webroot, and copy the `dist` directory from this repo into it as `theme`. The final directory that holds all the theme files is going to be `./index/theme/`.
 
 Add the following to the nginx config.
 
@@ -20,18 +20,12 @@ Add the following to the nginx config.
 
 ## Customisation
 
-Edit the `theme/header.html` file to change the page title, add content to the opengraph meta tags, or set a favicon.
-
-Edit the `theme/footer.html` file to change the page footer text.
-
-Edit `theme/theme.css` to change the default accent colour (`#3747bb`) to a different one.
-
-If you want to enable a god-awful bit of functionality, you can edit `theme/script.js` to uncomment the `replaceHTML();` call that allows per-directory `HEADER.html` and `FOOTER.html` files to be used in place of this index where they exist.
+You can customize this according to your own taste by editing the files at `src`.
 
 ## Demo
 
-A slightly-customised version of this is in use at https://mirrors.melbourne.co.uk/
+I am using it directly in my public file listing at https://files.agradip.fyi
 
 ## Acknowledgements
 
-Visual inspiration from https://github.com/alehaa/nginx-fancyindex-flat-theme
+This is forked from https://github.com/ShaneMcC/nginx-fancyindex-theme

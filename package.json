@@ -9,7 +9,7 @@
     },
     "keywords": [],
     "author": "Agradip335 (https://agradip.fyi)",
-    "license": "WTFPL",
+    "license": "MIT",
     "devDependencies": {
         "cross-env": "^7.0.3",
         "express": "^4.21.2",

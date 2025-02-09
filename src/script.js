@@ -162,7 +162,7 @@ function replaceBreadcrumbs() {
         // Check if this is the last bit (current page)
         if (index === bits.length - 1) {
             breadcrumbHTML += `
-                <li class="breadcrumb-item active" aria-current="page">
+                <li class="breadcrumb-item" aria-current="page">
                     ${bit}
                 </li>
             `;

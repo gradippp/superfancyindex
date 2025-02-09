@@ -2,6 +2,69 @@ var content = $("body > div.container > div > div");
 var table = $("table", content);
 var hasHTML = false;
 
+// File extension to Bootstrap icon map
+var iconMap = {
+    zip: "bi bi-file-zip-fill",
+    rar: "bi bi-file-zip-fill",
+    "7z": "bi bi-file-zip-fill",
+    tar: "bi bi-file-zip-fill",
+    gz: "bi bi-file-zip-fill",
+
+    jpg: "bi bi-file-image",
+    jpeg: "bi bi-file-image",
+    png: "bi bi-file-image",
+    gif: "bi bi-file-image",
+    bmp: "bi bi-file-image",
+    svg: "bi bi-file-image",
+    webp: "bi bi-file-image",
+
+    mp3: "bi bi-file-music",
+    wav: "bi bi-file-music",
+    ogg: "bi bi-file-music",
+    flac: "bi bi-file-music",
+    aac: "bi bi-file-music",
+
+    mp4: "bi bi-file-play",
+    mkv: "bi bi-file-play",
+    avi: "bi bi-file-play",
+    mov: "bi bi-file-play",
+    wmv: "bi bi-file-play",
+    webm: "bi bi-file-play",
+
+    pdf: "bi bi-file-pdf",
+    doc: "bi bi-file-word",
+    docx: "bi bi-file-word",
+    xls: "bi bi-file-excel",
+    xlsx: "bi bi-file-excel",
+    ppt: "bi bi-file-ppt",
+    pptx: "bi bi-file-ppt",
+
+    txt: "bi bi-filetype-text",
+    md: "bi bi-filetype-md",
+    csv: "bi bi-filetype-csv",
+
+    html: "bi bi-file-code",
+    css: "bi bi-file-code",
+    js: "bi bi-file-code",
+    ts: "bi bi-file-code",
+    json: "bi bi-filetype-json",
+    xml: "bi bi-filetype-xml",
+    yaml: "bi bi-filetype-yml",
+    yml: "bi bi-filetype-yml",
+
+    exe: "bi bi-file-binary",
+    dll: "bi bi-file-binary",
+    bin: "bi bi-file-binary",
+
+    iso: "bi bi-disc",
+    img: "bi bi-disc",
+
+    apk: "bi bi-android",
+    deb: "bi bi-file-binary",
+    rpm: "bi bi-file-binary",
+    dmg: "bi bi-file-binary",
+};
+
 function replaceHTML() {
     var hasHeader = false;
     var headerData = undefined;
@@ -56,6 +119,7 @@ function showReadme() {
         }
     );
 }
+
 function replaceBreadcrumbs() {
     // Remove the default nginx indexing
     document.querySelectorAll("#breadcrumb")[0]?.nextSibling?.nodeType ===
@@ -141,9 +205,11 @@ function fixTable() {
         icon.addClass(["col-auto"]);
         var filename = $("td:first a", this).attr("href").replace(/\?.*$/, "");
 
+        // Determine file extension
+        var ext = filename.split(".").pop().toLowerCase();
         var iconName = filename.endsWith("/")
             ? "bi bi-folder-fill"
-            : "bi bi-file-earmark-text";
+            : iconMap[ext] || "bi bi-file-earmark";
 
         icon.append($('<i class="' + iconName + '" aria-hidden="true"></i>'));
 

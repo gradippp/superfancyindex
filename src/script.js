@@ -39,7 +39,7 @@ var iconMap = {
     ppt: "bi bi-file-ppt",
     pptx: "bi bi-file-ppt",
 
-    txt: "bi bi-filetype-text",
+    txt: "bi bi-file-text",
     md: "bi bi-filetype-md",
     csv: "bi bi-filetype-csv",
 

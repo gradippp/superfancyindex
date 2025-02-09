@@ -117,7 +117,7 @@ function fixTable() {
     table.removeAttr("cellspacing");
     table.addClass([
         "table",
-        "table-light",
+        "table-dark",
         "table-sm",
         "table-hover",
         "text-nowrap",
@@ -128,7 +128,7 @@ function fixTable() {
     var header = $("tr", table)[0];
     header.remove();
     var thead = $("<thead>");
-    thead.addClass(["thead-dark", "table-dark"]);
+    thead.addClass(["thead-dark"]);
     thead.append(header);
     table.prepend(thead);
     $(header).prepend($('<th class="col-auto"></th>'));

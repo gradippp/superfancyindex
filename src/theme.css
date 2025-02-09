@@ -1,8 +1,10 @@
 :root {
-    --primary-color: #3747bb;
-    --background-color: #f8f9fa;
-    --text-color: #000000;
+    --primary-color: #4a67ff;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
     --text-color-light: #ffffff;
+    --navbar-background: #1f1f1f;
+    --breadcrumb-color: #4a67ff;
     --padding-top: 40px;
     --padding-bottom: 40px;
 }
@@ -17,13 +19,18 @@ body {
     padding-top: var(--padding-top);
     padding-bottom: var(--padding-bottom);
     background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
 }
 
 .navbar {
-    background-color: var(--primary-color);
+    background-color: var(--navbar-background);
     color: var(--text-color-light);
     min-height: 24px;
-    padding: 0 8;
+    padding: 0 8px;
 }
 
 .navbar-brand {
@@ -40,7 +47,7 @@ ol.breadcrumb {
 }
 
 li.breadcrumb-item a {
-    color: var(--primary-color);
+    color: var(--breadcrumb-color);
 }
 
 #list a,
@@ -66,7 +73,7 @@ li.breadcrumb-item a {
 }
 
 #list .filename {
-    word-break: break-all;
+    word-break: break-word;
     white-space: normal;
 }
 
@@ -75,7 +82,10 @@ li.breadcrumb-item a {
     bottom: 0;
     width: 100%;
     margin-bottom: 0;
+    background-color: var(--navbar-background);
+    padding: 10px;
 }
+
 .footer a,
 .footer a:hover,
 .footer a:focus {

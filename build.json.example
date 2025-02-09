@@ -2,7 +2,29 @@
     "header": {
         "site-title": "Directory Listing"
     },
+    "navbar": {
+        "links": [
+            {
+                "link": "https://github.com/Agradip335",
+                "icon": "bi bi-github"
+            },
+            {
+                "link": "https://discord.gg/Tnpb4dgKdj",
+                "icon": "bi bi-discord"
+            }
+        ]
+    },
     "footer": {
-        "footer-text": "<p>Directory listing style courtesy of <a href="https://github.com/Agradip335/nginx-fancyindex-theme">Agradip335/nginx-fancyindex-theme</a>.</p>"
+        "footer-text": "<p>Directory listing style courtesy of <a href=\"https://github.com/Agradip335/nginx-fancyindex-theme\">Agradip335/nginx-fancyindex-theme</a>.</p>",
+        "links": [
+            {
+                "link": "mailto:agradip@agradip.fyi",
+                "text": "agradip@agradip.fyi"
+            },
+            {
+                "link": "https://agradip.fyi",
+                "text": "agradip.fyi"
+            }
+        ]
     }
 }

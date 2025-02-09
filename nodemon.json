@@ -1,0 +1,6 @@
+{
+    "watch": ["src", "dev.js"],
+    "ignore": ["dist"],
+    "ext": "js,ejs,css,html",
+    "exec": "node build.js && node dev.js"
+}

@@ -1,0 +1,8 @@
+{
+    "header": {
+        "site-title": "Directory Listing"
+    },
+    "footer": {
+        "footer-text": "<p>Directory listing style courtesy of <a href="https://github.com/Agradip335/nginx-fancyindex-theme">Agradip335/nginx-fancyindex-theme</a>.</p>"
+    }
+}

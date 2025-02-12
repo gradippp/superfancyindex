@@ -5,25 +5,25 @@
     "navbar": {
         "links": [
             {
-                "link": "https://github.com/Agradip335",
-                "icon": "bi bi-github"
+                "link": "https://example.com/first-link",
+                "icon": "bi bi-icon"
             },
             {
-                "link": "https://discord.gg/Tnpb4dgKdj",
-                "icon": "bi bi-discord"
+                "link": "https://example.com/second-link",
+                "icon": "bi bi-icon"
             }
         ]
     },
     "footer": {
-        "footer-text": "<p>Directory listing style courtesy of <a href=\"https://github.com/Agradip335/superfancyindex\">Agradip335/superfancyindex</a>.</p>",
+        "footer-text": "<p>Directory listing style courtesy of <a href="https://github.com/Agradip335/superfancyindex">Agradip335/superfancyindex</a>.</p>",
         "links": [
             {
-                "link": "mailto:agradip@agradip.fyi",
-                "text": "agradip@agradip.fyi"
+                "link": "mailto:your-email@example.com",
+                "text": "your-email@example.com"
             },
             {
-                "link": "https://agradip.fyi",
-                "text": "agradip.fyi"
+                "link": "https://example.com",
+                "text": "example.com"
             }
         ]
     }

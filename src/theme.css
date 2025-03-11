@@ -11,13 +11,13 @@
 
 html {
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     padding-top: var(--padding-top);
-    padding-bottom: var(--padding-bottom);
+    /* padding-bottom: var(--padding-bottom); */
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -78,9 +78,8 @@ li.breadcrumb-item a {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 0z;
+    width: 100vw;
     margin-bottom: 0;
     background-color: var(--navbar-background);
     padding: 10px;
